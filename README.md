@@ -19,28 +19,27 @@
 
 ## 安裝步驟
 
-1. Create Fork
+1. Fork 專案
 2. 建立 Railway 專案
    1. 前往 https://railway.app 並登入
    2. 點選 `New Project` → 選擇 `Deploy from GitHub repo`
-   3. 選擇 `BookToNotionBot` 專案
+   3. 選擇你 Fork 後的 `BookToNotionBot` 專案
 
 3. 設定環境變數
    1. 點右側 `Variables`
    2. 新增以下三個變數
       1. `TELEGRAM_BOT_TOKEN`
-      
-          在 Telegram 使用 [@BotFather](https://t.me/botfather) 建立 Telegram Bot 並獲得 token         
+         - 在 Telegram 使用 [@BotFather](https://t.me/botfather) 建立 Telegram Bot 並獲得 token         
 
       2. `NOTION_DATABASE_ID`
-
-          從 Notion 資料庫頁面中獲取網址，複製 `https://www.notion.so/` 後 `?` 前的 32 字元
-
-          Ex: `https://www.notion.so/20483fa865128XXXXX23cbf8cb2ef0a4?v=2048...` 的資料庫ID是 `20483fa865128XXXXX23cbf8cb2ef0a4`
+          - 從 Notion 資料庫頁面中獲取網址，複製 `https://www.notion.so/` 後 `?` 前的 32 字元
+          - 範例: `https://www.notion.so/20483fa865128XXXXX23cbf8cb2ef0a4?v=2048...` 
+          
+              $\rightarrow$ 資料庫 ID 是 `20483fa865128XXXXX23cbf8cb2ef0a4`
 
       3. `NOTION_TOKEN`
-
-          進入 [Notion/Integrations](https://www.notion.so/profile/integrations) 新增 integration，將其加入目標資料庫的 Connection 中
+          - 進入 [Notion Integrations](https://www.notion.so/profile/integrations) 新增 integration
+          - 將其加入目標資料庫的 Connection 中 (右上三個點 $\rightarrow$ Connections $\rightarrow$ 搜尋並加入)
 4. 部署並執行
    - Railway 會自動部署並執行 `main.py`
    - 點 `Deployment` 可查看 log（包含 bot 是否啟動成功）
