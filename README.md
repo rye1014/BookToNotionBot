@@ -40,9 +40,7 @@
 
       3. `NOTION_TOKEN`
 
-          進入 [Notion/Integrations](https://www.notion.so/profile/integrations) 新增 integration
-
-          將其加入目標資料庫的 Connection 中
+          進入 [Notion/Integrations](https://www.notion.so/profile/integrations) 新增 integration，將其加入目標資料庫的 Connection 中
 4. 部署並執行
    - Railway 會自動部署並執行 `main.py`
    - 點 `Deployment` 可查看 log（包含 bot 是否啟動成功）
